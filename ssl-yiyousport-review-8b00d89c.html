@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>易游体育 · 入口处的光</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: linear-gradient(145deg, #fdefe0 0%, #f9dcc4 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1.5rem;
+            line-height: 1.7;
+            color: #2f2a25;
+        }
+
+        .card {
+            background: #fffcf9;
+            border-radius: 3rem 1.5rem 3rem 1.5rem;
+            max-width: 780px;
+            width: 100%;
+            padding: 2.8rem 2.5rem;
+            box-shadow: 0 20px 40px -12px rgba(140, 90, 50, 0.25),
+                        0 6px 12px -6px rgba(90, 60, 30, 0.08);
+            transition: box-shadow 0.2s;
+        }
+
+        .card:hover {
+            box-shadow: 0 28px 48px -14px rgba(130, 80, 40, 0.30);
+        }
+
+        .hero-phrase {
+            font-size: 1.9rem;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            color: #573d2b;
+            margin-bottom: 1.2rem;
+            line-height: 1.3;
+            border-left: 4px solid #d6b18b;
+            padding-left: 1.6rem;
+        }
+
+        .lead-in {
+            font-size: 1.08rem;
+            color: #4d3b2d;
+            margin: 1.6rem 0 1.2rem;
+            text-indent: 2em;
+        }
+
+        .thin-divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #e2cbb6, transparent);
+            margin: 1.8rem 0;
+            width: 100%;
+        }
+
+        .feature-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem 1.8rem;
+            margin: 1.8rem 0 1.6rem;
+        }
+
+        .feature-item {
+            flex: 1 1 180px;
+            background: #fcf5ed;
+            padding: 0.9rem 1.2rem;
+            border-radius: 60px 20px 40px 20px;
+            color: #3d2f23;
+            font-size: 0.98rem;
+            box-shadow: inset 0 0 0 1px #f1e1d1;
+            transition: all 0.15s;
+        }
+
+        .feature-item strong {
+            display: block;
+            font-weight: 500;
+            color: #6a4d35;
+            margin-bottom: 0.2rem;
+            font-size: 1.05rem;
+        }
+
+        .body-text {
+            margin: 1.2rem 0 1.6rem;
+            font-size: 1.02rem;
+            color: #3b3028;
+        }
+
+        .body-text a {
+            display: inline;
+            background: transparent;
+            color: #855f41;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px dashed #c7a888;
+            transition: border-color 0.15s, color 0.15s;
+            padding: 0 0.1rem;
+        }
+
+        .body-text a:hover {
+            color: #ac7b57;
+            border-bottom-style: solid;
+            border-bottom-color: #ac7b57;
+        }
+
+        .gentle-cta {
+            margin: 1.8rem 0 0.6rem;
+            display: inline-block;
+            background: #f5e6d9;
+            padding: 0.6rem 2rem;
+            border-radius: 60px;
+            font-size: 0.95rem;
+            color: #4e3729;
+            border: 1px solid #ebd7c5;
+            box-shadow: 0 2px 6px rgba(140, 90, 50, 0.05);
+            transition: background 0.2s, border-color 0.2s;
+            text-decoration: none;
+            font-weight: 450;
+        }
+
+        .gentle-cta:hover {
+            background: #efdccc;
+            border-color: #cbae93;
+        }
+
+        .footnote {
+            font-size: 0.9rem;
+            color: #7d6b5b;
+            border-top: 1px solid #e9dacd;
+            margin-top: 2.2rem;
+            padding-top: 1.2rem;
+            text-align: center;
+            letter-spacing: 0.3px;
+        }
+
+        .footnote span {
+            background: #f2e5d9;
+            display: inline-block;
+            padding: 0.1rem 0.8rem;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            color: #7c5f47;
+        }
+
+        @media (max-width: 500px) {
+            .card {
+                padding: 2rem 1.5rem;
+                border-radius: 2rem 1rem 2rem 1rem;
+            }
+            .hero-phrase {
+                font-size: 1.5rem;
+                padding-left: 1rem;
+            }
+            .feature-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="hero-phrase">
+            一道安静的门，通向一处日常。
+        </div>
+
+        <p class="lead-in">
+            几年前第一次打开那个页面，加载时没放任何背景图，只有一排小字和干净的底色。后来每次从收藏夹点进去，界面依然没有变，连字间距都没动过。大概从那时起，我慢慢认同一种看法——一个稳定入口的价值，不在于它多醒目，而在于它从不突然消失，也不随意更改自己。
+        </p>
+
+        <div class="thin-divider"></div>
+
+        <div class="feature-grid">
+            <div class="feature-item">
+                <strong>不动的位置</strong>
+                书签栏里存在了好几年，路径没变过，连响应速度都保持一致。
+            </div>
+            <div class="feature-item">
+                <strong>克制的呈现</strong>
+                信息层级分明，没有弹窗、没有闪动的引导，安静地把内容放在那里。
+            </div>
+            <div class="feature-item">
+                <strong>低调的延续</strong>
+                页面结构很少大改，功能模块稳定，用久了会形成一种下意识的信任。
+            </div>
+        </div>
+
+        <div class="body-text">
+            后来我把这个地址推荐给几个朋友，只说了一句：「如果你需要一个不太折腾的地方，可以看看 <a href="https://ssl-yiyousport.com">易游体育</a>。」他们有人用了很久，也有人偶尔上去转一圈，但几乎没人抱怨过找不到某个功能。我想，这大概就是入口该有的样子：不打扰，但一直在。
+        </div>
+
+        <div class="body-text" style="margin-top: 0.2rem;">
+            页面下方的帮助指引很简短，没有大段的 FAQ 折叠，只有三四行常见问题摘要，配一个简单的联系入口。这种分寸感，反而让人更愿意去自己翻一翻。
+        </div>
+
+        <a href="https://ssl-yiyousport.com" class="gentle-cta">易游体育</a>
+        <span style="display: inline-block; margin-left: 0.8rem; font-size: 0.9rem; color: #8b735f;">— 熟路不必挂灯</span>
+
+        <div class="footnote">
+            <span>从一处稳定的入口开始，慢慢形成自己的习惯。</span>
+        </div>
+    </div>
+</body>
+</html>
